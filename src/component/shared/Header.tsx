@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignIn, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
+import {  SignedOut,  SignInButton, SignUpButton } from '@clerk/nextjs'
 import React from 'react'
 
 const Header = () => {
@@ -12,9 +12,7 @@ const Header = () => {
                 </button>
               </SignUpButton>
             </SignedOut>
-            {/* <SignedIn>
-              <UserButton />
-            </SignedIn> */}
+            
           </header>
   )
 }
