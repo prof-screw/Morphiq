@@ -5,14 +5,14 @@ declare type CreateUserParams = {
   clerkId: string;
   email: string;
   username: string;
-  firstName: string;
-  lastName: string;
+  firstName: string | null;
+  lastName: string | null;
   photo: string;
 };
 
 declare type UpdateUserParams = {
-  firstName: string;
-  lastName: string;
+  firstName: string | null;
+  lastName: string | null;
   username: string;
   photo: string;
 };
@@ -25,7 +25,7 @@ declare type AddImageParams = {
     transformationType: string;
     width: number;
     height: number;
-    config: any;
+    config: object;
     secureURL: string;
     transformationURL: string;
     aspectRatio: string | undefined;
@@ -44,7 +44,7 @@ declare type UpdateImageParams = {
     transformationType: string;
     width: number;
     height: number;
-    config: any;
+    config: object;
     secureURL: string;
     transformationURL: string;
     aspectRatio: string | undefined;
@@ -128,7 +128,7 @@ declare type TransformationFormProps = {
 };
 
 declare type TransformedImageProps = {
-  image: any;
+  image: URL;
   type: string;
   title: string;
   transformationConfig: Transformations | null;
