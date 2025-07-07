@@ -1,5 +1,5 @@
-import MobileNav from '@/component/shared/MobileNav'
-import Sidebar from '@/component/shared/Sidebar'
+import MobileNav from '@/components/shared/MobileNav'
+import Sidebar from '@/components/shared/Sidebar'
 import React from 'react'
 // It defines a React component named Layout that:
 //     Takes one prop called children

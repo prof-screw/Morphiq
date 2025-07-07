@@ -3,7 +3,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 // import {cn} from "@/lib/utils";
 import "./globals.css";
 import {  ClerkProvider} from '@clerk/nextjs'
-import Header from "@/component/shared/Header";
+import Header from "@/components/shared/Header";
 
 const IBMPlex  = IBM_Plex_Sans({
   subsets: ["latin"],
