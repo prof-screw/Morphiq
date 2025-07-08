@@ -7,7 +7,8 @@ import { transformationTypes } from "@/constants";
 import { getUserById } from "@/lib/actions/user.actions";
 import { auth } from "@clerk/nextjs/server";
 
-const AddTransformationTypePage = async ({ params : {type} }:SearchParamProps) => {
+const AddTransformationTypePage = async ({ params  }:SearchParamProps) => {
+    const {type }= params;
     const {userId,redirectToSignIn} = await auth();
     const transformation = transformationTypes[type];
     if(!userId) return redirectToSignIn();
